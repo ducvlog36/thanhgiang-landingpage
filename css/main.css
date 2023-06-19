@@ -1155,9 +1155,17 @@ img {
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
+  .slide-cover {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    padding: 0 5rem;
+    background: url("../img/visual-cover.png") right center / cover;
+    z-index: 100;
+  }
   .centered-inner-sp-none {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     transform: translateY(0%) translateX(0%);
