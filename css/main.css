@@ -937,6 +937,13 @@ section {
   .member-massage-title {
     font-size: 20px;
   }
+    .column{
+    flex-direction: column; /* Sắp xếp nội dung theo chiều dọc trên màn hình nhỏ */
+  }
+  
+  .column .centered-outer .centered-inner-sp-none .radius img{
+    margin-bottom: 10px; /* Thêm khoảng cách giữa hình ảnh và văn bản */
+  }
 }
 @media screen and (max-width: 767px) {
   .midashi {
@@ -1108,6 +1115,7 @@ img {
 .radius,
 .radius video,
 .radius img {
+  max-width: 100%;
   border-radius: 4px;
   moz-border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -2341,8 +2349,18 @@ a.map-btn:hover {
 }
 @media only screen and (max-width: 767px) {
   .slide-wrap {
-    height: 100vh;
+    height: 40vh;
+    width: 100%;
+    top: 0px;
+    margin-bottom: -184px;
   }
+  .img {
+    max-width: 80%;
+    height: auto;
+    width/***/: auto;
+    vertical-align: bottom;
+    text-align: center;
+}
   .slide {
     height: 63%;
   }
@@ -2553,7 +2571,7 @@ dl.news-list {
 }
 
 .company {
-  background: url("../img/thankyou.png") 56% 20% / cover;
+  background: url("../img/thankyou.png") 50% 50% / cover;
 }
 .contact {
   background: url("../img/page-header.jpg") 56% 20% / cover;
