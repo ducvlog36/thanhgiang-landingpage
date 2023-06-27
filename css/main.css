@@ -2692,7 +2692,9 @@ dl.news-list {
   .page-header-wrap-s.thin .page-header-s {
     height: 160px;
   }
-
+  .company {
+    background: url("../img/jobmobile.png") 50% 50% / cover;
+  }
   .page-header-content:after {
     content: "";
     display: block;
